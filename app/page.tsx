@@ -1,14 +1,18 @@
-import { Button } from "@/components/ui/button";
+import BgGradient from "@/components/common/bg-gradient";
+import DemoSection from "@/components/home/demosection";
+import HeroSection from "@/components/home/herosection";
 
 export default function Home() {
   return (
-    <div
-    //   className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen
-    //  p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
-    >
-      <Button variant="outline" size={"lg"}>
-        SHADCN BUTTON
-      </Button>
+    <div className="relative w-full">
+      <BgGradient />
+      <div className="flex flex-col">
+        <HeroSection />
+        <DemoSection />
+      </div>
+      {/* <HowItWorksSection/> */}
+      {/* <PricingSection/> */}
+      {/* <CTASection/> */}
     </div>
   );
 }
